@@ -1,10 +1,16 @@
 <!DOCTYPE html>
-
+<html lang="en">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-<html>
+
 <head>
+    <meta charset="utf-8">
+    <title>Google</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
     ul.top {
         list-style-type: none;
@@ -14,26 +20,26 @@
     }
     .blue-background {
     	float: right;
-        background-color: #0083FF;
+        background-color: #0070FF;
     }
 	li {
     	float: left;
     }
     a {
         display: block;
-        color: black;
+        color: #666;
         text-align: center;
         padding: 10px;
     }
-    c {
-   	 	display: block;
+    b {
+        display: block;
         color: white;
         text-align: center;
         padding: 10px;
     }
-    li c:hover {
+    li b:hover {
     	color: white;
-    	background-color: #0093FF;        
+    	background-color: #2082FF;        
 	}
     .verticalhorizontal {
     	display: table-cell;
@@ -51,26 +57,33 @@
         font-family: "Open Sans";
         overflow: hidden;
 	}
-    a {
-  		color: #666;
-        display: block;
-        text-align: center;
-        padding: 10px;
-	}
     .center {
     	display: block;
  		margin-left: auto;
   		margin-right: auto;
-  		width: 50%;
+  		width: 20%;
+    }
+    #middle {
+    	display: block;
+ 		margin-left: auto;
+  		margin-right: auto;
+  		width: 5%;
+    }
+    .centered {
+    	display: block;
+ 		margin-left: auto;
+  		margin-right: auto;
+  		width: 90%;
     }
 </style>
 </head>
-<main> 
+<body> 
 
 <ul class="top">
 	<li><a href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header">About</a></li>
 	<li><a href="https://store.google.com/US/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US">Store</a></li>
-    <li style="float:right" class="blue-background"><c href="https://accounts.google.com/signin/v2/identifier?hl=en&passive=true&continue=https%3A%2F%2Fwww.google.com%2F&ec=GAZAmgQ&flowName=GlifWebSignIn&flowEntry=ServiceLogin">Sign in</c></li>
+    <li style="float:right" class="blue-background"><b href="https://accounts.google.com/signin/v2/identifier?hl=en&passive=true&continue=https%3A%2F%2Fwww.google.com%2F&ec=GAZAmgQ&flowName=GlifWebSignIn&flowEntry=ServiceLogin">Sign in</b></li>
+    <li style="float:right" class="material-icons"><a href="https://about.google/intl/en/products/">apps</a></li>
     <li style="float:right"><a href="https://www.google.com/imghp?hl=en&ogbl">Images</a></li>
     <li style="float:right"><a href="https://www.google.com/gmail/about/">Gmail</a></li>
 </ul>
@@ -78,7 +91,9 @@
 <div class="verticalhorizontal">
 <img src="https://cdn.statically.io/gh/TheOdinProject/curriculum/284f0cdc998be7e4751e29e8458323ad5d320303/foundations/the_front_end/project_html_css/imgs/00.png" alt="The Google Logo">
 <form action="https://www.google.com/">
-	<input type="text" class="center" placeholder="Search">
+	<input type="text" class="centered" placeholder="search">
+    <button type="submit">Google Search</button>
+    <button type="submit">I'm Feeling Lucky</button>
 </form>
 </div>
 
@@ -86,9 +101,11 @@
 	<li><a href="https://ads.google.com/intl/en_us/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1#!/">Advertising</a></li>
     <li><a href="https://smallbusiness.withgoogle.com/?subid=us-en-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google&utm_medium=ep&utm_campaign=google_hpbfooter&utm_content=google_hpbfooter&gmbsrc=us-en_US-et-gs-z-gmb-s-z-u~sb-g4sb_srvcs-u#!/">Business</a></li>
     <li><a href="https://www.google.com/search/howsearchworks/?fg=1">How Search works</a></li>
-    <li class="center"><a href="https://sustainability.google/commitments/?utm_source=googlehpfooter&utm_medium=housepromos&utm_campaign=bottom-footer&utm_content=">Carbon neutral since 2007</a></li>
+    <li id="middle" class="material-icons"><a href="https://sustainability.google/commitments/?utm_source=googlehpfooter&utm_medium=housepromos&utm_campaign=bottom-footer&utm_content=">spa</a></li>
+    <li class="center"><a href="https://sustainability.google/commitments/?utm_source=googlehpfooter&utm_medium=housepromos&utm_campaign=bottom-footer&utm_content="> Carbon neutral since 2007</a></li>
     <li style="float:right"><a href="https://policies.google.com/privacy?hl=en&fg=1">Privacy</a></li>
     <li style="float:right"><a href="https://policies.google.com/terms?hl=en&fg=1">Terms</a></li>
     <li style="float:right"><a href="https://www.google.com/preferences?hl=en&fg=1">Settings</a></li>
-</main>
+</ul>
+</body>
 </html>
